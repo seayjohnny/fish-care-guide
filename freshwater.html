@@ -12,7 +12,6 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
     <link rel="stylesheet" href="styles.css">
 
 
@@ -22,33 +21,31 @@
 
 <body>
     <div class="background">
-        <img src="img/fish-sea.jpg" />
+        <img src="img/freshwater.jpg" />
     </div>
     <div data-include="header"></div>
-    <div>
-        <div class="content">
-            <h1 class="title">Welcome to my personal aquarium care guide!</h1>
+    <div class="content">
+        <div class="banner">
+            <img src="img/freshwater.jpg" />
         </div>
-        <div class="row" >
-            <div class="nav-card" data-route="freshwater">
-                <img src="img/freshwater.jpg" />
-                <h1 class="title">Freshwater</h1>
+
+        <h1 class="title">Freshwater Aquarium</h1>
+        <div class="nc">
+            <div class="nc-nav">
+                <a data-content="start_up">Start Up & Change Water</a>
+                <a data-content="adding_fish">Adding Fish</a>
+                <a data-content="regular_care">Regular Care</a>
+                <a data-content="plant_care">Plant Care</a>
+                <a data-content="water_problem_solving">Water Problem Solving</a>
+                <a data-content="fish_problem_solving">Fish Problem Solving</a>
             </div>
-            <div class="nav-card">
-                <img src="img/planted.jpg" />
-                <h1 class="title">Planted</h1>
-            </div>
-            <div class="nav-card">
-                <img src="img/coral.jpg" />
-                <h1 class="title">Coral</h1>
+            <div class="nc-content">
+                <div data-include="start_up"></div>
             </div>
         </div>
-    </div>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="scripts.js"></script>
 
 </html>
-
-<!-- background-image: radial-gradient( rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0) 50%); -->
