@@ -1,7 +1,12 @@
 $(function() {
 
-    // const base = "fish-care-guide/"
-    const base = ""
+    let base;
+    if(window.location.host == "127.0.0.1:3000") {
+        base = ""
+    } else {
+        base = "fish-care-guide/"
+    }
+    console.log(base)
 
     var includes = $('[data-include]')
     $.each(includes, function() {
