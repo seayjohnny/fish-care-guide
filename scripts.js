@@ -28,6 +28,9 @@ $(function() {
         return false
     })
 
+    $( window ).resize(function() {
+        $( ".background" ).css("height","100%");
+    });
     
 
 })
