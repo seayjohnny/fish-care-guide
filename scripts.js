@@ -1,10 +1,10 @@
 $(function() {
 
-    
+    const base = "fish-care-guide/"
 
     var includes = $('[data-include]')
     $.each(includes, function() {
-        var file = 'templates/' + $(this).data('include') + '.html'
+        var file = base + 'templates/' + $(this).data('include') + '.html'
         $(this).load(file)
     })
 
@@ -12,7 +12,7 @@ $(function() {
         var route = $(this).data("route")
         let loc
         if (route) {
-            loc = route + '.html'
+            loc = base + route + '.html'
         } else {
             loc = '#'
         }
@@ -23,7 +23,7 @@ $(function() {
     $(".nc > .nc-nav > a").click(function() {
         var route = $(this).data("content")
         if (route) {
-            var file = 'templates/' + route + '.html'
+            var file = base + 'templates/' + route + '.html'
             $(".nc .nc-content").load(file)
         } 
         window.location = loc
