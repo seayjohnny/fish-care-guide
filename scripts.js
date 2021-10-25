@@ -1,6 +1,7 @@
 $(function() {
 
-    const base = "fish-care-guide/"
+    // const base = "fish-care-guide/"
+    const base = ""
 
     var includes = $('[data-include]')
     $.each(includes, function() {
